@@ -5,35 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - Noor Fatima</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Special Thank You Page Styles */
+        .thank-you-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5e6e8 0%, #faf0f0 100%);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .thank-you-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(126, 87, 194, 0.2);
+            max-width: 600px;
+        }
+        
+        .thank-you-box h1 {
+            color: #7e57c2;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .thank-you-box p {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .thank-you-box a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.8rem 2rem;
+            background: #7e57c2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .thank-you-box a:hover {
+            background: #5e3a8c;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#work">Work</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="thank-you-container">
+        <div class="thank-you-box">
+            <h1>Thank You! </h1>
+            <p>Your message has been sent successfully.<br>I'll get back to you as soon as possible!</p>
+            <a href="index.html#contact">← Back to Contact</a>
+            <a href="index.html">Go to Home</a>
         </div>
-    </header>
-    
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Thank You! </h1>
-                    <p class="subtitle">Your message has been sent successfully.</p>
-                    <p>I'll get back to you as soon as possible!</p>
-                    <div class="social-links" style="margin-top: 2rem;">
-                        <a href="index.html#contact">← Back to Contact</a>
-                        <a href="index.html">Go to Home</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    </div>
 </body>
 </html>
