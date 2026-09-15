@@ -16,7 +16,6 @@
     <!-- 1. Navigation Header -->
     <header class="site-header"> <!-- banner or front cover containing navigation links and branding -->
         <div class="container"> <!-- division that contains the header content often used for layout purposes -->
-        
             <nav class="navbar"> <!-- defines the navigation bar, which contains links to different sections of the webpage -->
                 <ul class="nav-links"> <!-- an unordered list that contains the navigation links -->
                     <li><a href="#home">Home</a></li> <!-- a list item containing a link to the "Home" section of the webpage -->
@@ -113,6 +112,20 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Project 4: Portfolio -->
+                    <div class="project-card">
+                        <img src="assets/Portfolio.png" alt="Personal Portfolio">
+                        <div class="project-info">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive, custom-built personal portfolio website designed to showcase my skills, projects, and professional journey.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NUR0710" target="_blank">View on GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- closes projects-grid -->
+            </div> <!-- closes container -->
         </section>
 
         <!-- CONTACT Section (Fourth & Last inside main) -->
@@ -137,7 +150,7 @@
                         </div>
                     </div>
 
-                                              <form class="contact-form" action="https://formspree.io/f/xyezgzyv" method="POST">
+                    <form class="contact-form" action="https://formspree.io/f/xyezgzyv" method="POST">
                         <input type="hidden" name="_next" value="https://nur0710.github.io/Portfolio/thank-you.html">
                         
                         <div class="form-group">
@@ -150,7 +163,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea> <!-- a textarea input field for users to enter their message, with a specified number of rows and a placeholder text, its a Resize handle -->
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
                         </div>
                         <button type="submit">Send Message</button>
                     </form>
