@@ -150,13 +150,11 @@
                         </div>
                     </div>
 
-                  <form class="contact-form" action="https://formspree.io/f/xyezgzyv" method="POST">
-    <input type="hidden" name="_next" value="https://nur0710.github.io/Portfolio/thank-you.html">
-    
-    <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required placeholder="Name">
-    </div>
+                                     <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Name">
+                        </div>
                         <div class="form-group">
                             <label for="email">Your Email</label>
                             <input type="email" id="email" name="email" required placeholder="Email@example.com">
@@ -165,7 +163,8 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
                         </div>
-                        <button type="submit">Send Message</button>
+                        <button type="submit" id="submit-btn">Send Message</button>
+                        <div id="form-status" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px; text-align: center;"></div>
                     </form>
                 </div>
             </div>
