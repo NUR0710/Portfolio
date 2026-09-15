@@ -1,135 +1,168 @@
-<!DOCTYPE html> <!-- tells browser that this is an HTML5 document (version 5 of HTML) -->
-<html lang="en"> <!-- sets the language of the document to English -->
-<head> <!-- contains metadata and links to external resources -->
-    <meta charset="UTF-8"> <!-- specifies the character encoding for the document (UTF-8 supports most characters), binary to human-readable text -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensures the page is responsive and scales correctly on different devices -->
-    <link rel="stylesheet" href="style.css"> <!-- links to an external CSS file for styling the webpage -->
-    <title>Noor Fatima - Portfolio</title> <!-- sets the title of the webpage that appears in the browser tab -->
-    <!-- Favicon Code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for beautiful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Noor Fatima - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-</head> <!-- closes the head section -->
-<body> <!-- begins the body of the document, which contains all the content that will be displayed on the webpage -->
+</head>
+<body>
     
-    <!-- 1. Navigation Header -->
-    <header class="site-header"> <!-- banner or front cover containing navigation links and branding -->
-        <div class="container"> <!-- division that contains the header content often used for layout purposes -->
-            <nav class="navbar"> <!-- defines the navigation bar, which contains links to different sections of the webpage -->
-                <ul class="nav-links"> <!-- an unordered list that contains the navigation links -->
-                    <li><a href="#home">Home</a></li> <!-- a list item containing a link to the "Home" section of the webpage -->
-                    <li><a href="#about">About</a></li> <!-- a list item containing a link to the "About" section of the webpage -->
-                    <li><a href="#work">Work</a></li> <!-- a list item containing a link to the "Work" section of the webpage -->
-                    <li><a href="#contact">Contact</a></li> <!-- a list item containing a link to the "Contact" section of the webpage -->
-                </ul> <!-- closes the unordered list of navigation links -->
-            </nav> <!-- closes the navigation bar -->
-        </div> <!-- closes the container div -->
-    </header> <!-- closes the header section of the webpage -->
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- 2. Main Content Starts Here -->
-    <main> <!-- begins the main content area of the webpage, which contains the primary information and sections -->
-        
-        <!-- HOME Section (First) -->
-        <section id="home" class="hero"> <!-- defines the "Home" section of the webpage, which is often the first section users see, and gives it a class for styling -->
-            <div class="container"> <!-- a container div that holds the content of the "Home" section -->
-                <div class="hero-content"> <!-- a div that contains the main content of the "Home" section, typically including headings and introductory text -->
-                    <h1>Noor Fatima</h1> <!-- the main heading of the "Home" section, displaying the name "Noor Fatima" -->
-                    <p class="subtitle">Full Stack Developer</p> <!-- a paragraph that serves as a subtitle, describing the profession of the individual -->
-                    <div class="hero-social"> <!-- front cover -->
-                        <p>📍 Lahore, Pakistan</p> <!-- a paragraph displaying the location of the individual -->
-                        <div class="social-links"> <!-- a div that contains links to social media profiles and contact methods -->
-                            <a href="https://github.com/NUR0710" target="_blank">GitHub</a>
-                            <a href="mailto:noor.bajwa0077@gmail.com">Email Me</a>
+    <main>
+        <!-- HOME Section -->
+        <section id="home" class="hero fade-in">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Noor Fatima</h1>
+                    <p class="subtitle">Full Stack Developer</p>
+                    <div class="hero-social">
+                        <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+                        <div class="social-links">
+                            <a href="https://github.com/NUR0710" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="mailto:noor.bajwa0077@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ABOUT Section (Second) -->
-        <section id="about" class="about"> <!-- about section -->
+        <!-- NEW: STATS Section -->
+        <section id="stats" class="stats fade-in">
             <div class="container">
-                <h2>About Me</h2> <!-- a heading for the "About Me" section, introducing the content that follows -->
-                <div class="about-content">
-                    <div class="about-image"> 
-                        <img src="assets/pfp.jpeg" alt="Noor Fatima" width="300">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-code"></i>
+                        <h3>5+</h3>
+                        <p>Projects Completed</p>
                     </div>
-                    <div class="about-text">
-                        <p>
-                            I'm a passionate web developer based in Lahore, Pakistan, with experience creating beautiful, 
-                            functional websites. I specialize in HTML, CSS, JavaScript, and modern web technologies.
-                        </p>
-                        <p>
-                            When I'm not coding, you can find me learning new skills, exploring new technologies, and 
-                            building awesome projects to solve real-world problems.
-                        </p>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>500+</h3>
+                        <p>Hours of Coding</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>BSCS</h3>
+                        <p>University Student</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>100%</h3>
+                        <p>Dedication</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- WORK Section (Third) -->
-        <section id="work" class="work">
+        <!-- ABOUT Section -->
+        <section id="about" class="about fade-in">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-image"> 
+                        <img src="assets/pfp.jpeg" alt="Noor Fatima">
+                    </div>
+                    <div class="about-text">
+                        <p>I'm a passionate web developer based in Lahore, Pakistan, with experience creating beautiful, functional websites. I specialize in HTML, CSS, JavaScript, and modern web technologies.</p>
+                        <p>When I'm not coding, you can find me learning new skills, exploring new technologies, and building awesome projects to solve real-world problems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: SKILLS Section -->
+        <section id="skills" class="skills fade-in">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-html5" style="color: #e34c26;"></i><span>HTML5</span></div>
+                    <div class="skill-card"><i class="fab fa-css3-alt" style="color: #264de4;"></i><span>CSS3</span></div>
+                    <div class="skill-card"><i class="fab fa-js" style="color: #f0db4f;"></i><span>JavaScript</span></div>
+                    <div class="skill-card"><i class="fab fa-python" style="color: #306998;"></i><span>Python</span></div>
+                    <div class="skill-card"><i class="fab fa-git-alt" style="color: #f05032;"></i><span>Git & GitHub</span></div>
+                    <div class="skill-card"><i class="fas fa-database" style="color: #00758f;"></i><span>SQL</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK Section -->
+        <section id="work" class="work fade-in">
             <div class="container">
                 <h2>My Work</h2>
                 <p class="work-intro">Here are some of the projects I have built during my university studies</p>
                 
-                <div class="projects-grid"> <!-- a div that contains a grid layout for displaying multiple project cards in the "Work" section -->
-                    
-                    <!-- Project 1: Data Structures -->
+                <div class="projects-grid">
                     <div class="project-card">
                         <img src="assets/StressLevel.png" alt="Data Structures Project"> 
                         <div class="project-info">
                             <h3>Stress Level Analyzer</h3>
-                            <p>A comprehensive university project demonstrating practical implementation of data structures and algorithms to solve complex computational problems efficiently.</p>
+                            <p>A comprehensive university project demonstrating practical implementation of data structures and algorithms.</p>
                             <div class="project-links">
-                                <a href="https://github.com/NUR0710/Data-Structures_-Lab-Project" target="_blank">View on GitHub →</a>
+                                <a href="https://github.com/NUR0710/Data-Structures_-Lab-Project" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: Operating Systems -->
                     <div class="project-card">
                         <img src="assets/OS.png" alt="Operating Systems Project">
                         <div class="project-info">
                             <h3>Log Processing</h3>
-                            <p>A university-level project focusing on core operating system concepts, demonstrating practical understanding of system-level programming and resource management.</p>
+                            <p>A university-level project focusing on core operating system concepts and system-level programming.</p>
                             <div class="project-links">
-                                <a href="https://github.com/NUR0710/OS_Lab-Project" target="_blank">View on GitHub →</a>
+                                <a href="https://github.com/NUR0710/OS_Lab-Project" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 3: Ecommerce -->
                     <div class="project-card">
-                        <img src="assets/E-commerce.png" alt="E-comm ">
+                        <img src="assets/E-commerce.png" alt="E-comm">
                         <div class="project-info">
                             <h3>E-commerce</h3>
-                            <p>E-commerce web page for online clothing</p>
+                            <p>E-commerce web page for online clothing.</p>
                             <div class="project-links">
-                                <a href="https://github.com/NUR0710/Ecommerce" target="_blank">View on GitHub →</a>
+                                <a href="https://github.com/NUR0710/Ecommerce" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 4: Portfolio -->
                     <div class="project-card">
                         <img src="assets/Portfolio.png" alt="Personal Portfolio">
                         <div class="project-info">
                             <h3>Personal Portfolio</h3>
-                            <p>A fully responsive, custom-built personal portfolio website designed to showcase my skills, projects, and professional journey.</p>
+                            <p>A fully responsive, custom-built personal portfolio website.</p>
                             <div class="project-links">
-                                <a href="https://github.com/NUR0710" target="_blank">View on GitHub →</a>
+                                <a href="https://github.com/NUR0710" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                </div> <!-- closes projects-grid -->
-            </div> <!-- closes container -->
+                </div>
+            </div>
         </section>
 
-        <!-- CONTACT Section (Fourth & Last inside main) -->
-        <section id="contact" class="contact">
+        <!-- CONTACT Section -->
+        <section id="contact" class="contact fade-in">
             <div class="container">
                 <h2>Get In Touch</h2>
                 <p class="contact-intro">Want to work together?<br>I'd love to hear from you.</p>
@@ -137,20 +170,20 @@
                 <div class="contact-content">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <h3>📍 Location</h3>
+                            <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
                             <p>Lahore, Pakistan</p>
                         </div>
                         <div class="contact-item">
-                            <h3>📧 Email</h3>
+                            <h3><i class="fas fa-envelope"></i> Email</h3>
                             <p>noor.bajwa0077@gmail.com</p>
                         </div>
                         <div class="contact-item">
-                            <h3>💻 GitHub</h3>
+                            <h3><i class="fab fa-github"></i> GitHub</h3>
                             <a href="https://github.com/NUR0710" target="_blank">github.com/NUR0710</a>
                         </div>
                     </div>
 
-                                     <form id="contact-form" class="contact-form">
+                    <form id="contact-form" class="contact-form">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required placeholder="Name">
@@ -169,16 +202,19 @@
                 </div>
             </div>
         </section>
-
     </main>
-    <!-- 3. Main Content Ends Here -->
 
-    <!-- 4. Footer -->
-    <footer class="footer"> <!-- defines the footer section of the webpage, which typically contains copyright information and other relevant links -->
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Noor Fatima. All rights reserved.</p> <!-- a paragraph that displays the copyright notice, indicating that all rights are reserved by Noor Fatima for the year 2026 -->
+            <p>&copy; 2026 Noor Fatima. All rights reserved.</p>
         </div>
     </footer>
-        <script src="form-handler.js"></script>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Combined JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
