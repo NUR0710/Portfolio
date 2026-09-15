@@ -1,0 +1,180 @@
+<!DOCTYPE html> <!-- tells browser that this is an HTML5 document (version 5 of HTML) -->
+<html lang="en"> <!-- sets the language of the document to English -->
+<head> <!-- contains metadata and links to external resources -->
+    <meta charset="UTF-8"> <!-- specifies the character encoding for the document (UTF-8 supports most characters), binary to human-readable text -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensures the page is responsive and scales correctly on different devices -->
+    <link rel="stylesheet" href="style.css"> <!-- links to an external CSS file for styling the webpage -->
+    <title>Noor Fatima - Portfolio</title> <!-- sets the title of the webpage that appears in the browser tab -->
+</head> <!-- closes the head section -->
+<body> <!-- begins the body of the document, which contains all the content that will be displayed on the webpage -->
+    
+    <!-- 1. Navigation Header -->
+    <header class="site-header"> <!-- banner or front cover containing navigation links and branding -->
+        <div class="container"> <!-- division that contains the header content often used for layout purposes -->
+            <div class="logo"> <!-- a div for the website logo or brand name -->
+                <h1>Noor Fatima</h1> <!-- the main heading for the logo, displaying the name "Noor Fatima" -->
+            </div> <!-- closes the div for the website logo or brand name --> 
+            <nav class="navbar"> <!-- defines the navigation bar, which contains links to different sections of the webpage -->
+                <ul class="nav-links"> <!-- an unordered list that contains the navigation links -->
+                    <li><a href="#home">Home</a></li> <!-- a list item containing a link to the "Home" section of the webpage -->
+                    <li><a href="#about">About</a></li> <!-- a list item containing a link to the "About" section of the webpage -->
+                    <li><a href="#work">Work</a></li> <!-- a list item containing a link to the "Work" section of the webpage -->
+                    <li><a href="#contact">Contact</a></li> <!-- a list item containing a link to the "Contact" section of the webpage -->
+                </ul> <!-- closes the unordered list of navigation links -->
+            </nav> <!-- closes the navigation bar -->
+        </div> <!-- closes the container div -->
+    </header> <!-- closes the header section of the webpage -->
+
+    <!-- 2. Main Content Starts Here -->
+    <main> <!-- begins the main content area of the webpage, which contains the primary information and sections -->
+        
+        <!-- HOME Section (First) -->
+        <section id="home" class="hero"> <!-- defines the "Home" section of the webpage, which is often the first section users see, and gives it a class for styling -->
+            <div class="container"> <!-- a container div that holds the content of the "Home" section -->
+                <div class="hero-content"> <!-- a div that contains the main content of the "Home" section, typically including headings and introductory text -->
+                    <h1>Noor Fatima</h1> <!-- the main heading of the "Home" section, displaying the name "Noor Fatima" -->
+                    <p class="subtitle">WEB DEVELOPER & DESIGNER</p> <!-- a paragraph that serves as a subtitle, describing the profession of the individual -->
+                    <div class="hero-social"> <!-- front cover -->
+                        <p>📍 Lahore, Pakistan</p> <!-- a paragraph displaying the location of the individual -->
+                        <div class="social-links"> <!-- a div that contains links to social media profiles and contact methods -->
+                            <a href="https://github.com/NUR0710" target="_blank">GitHub</a>
+                            <a href="mailto:noor.bajwa0077@gmail.com">Email Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT Section (Second) -->
+        <section id="about" class="about"> <!-- about section -->
+            <div class="container">
+                <h2>About Me</h2> <!-- a heading for the "About Me" section, introducing the content that follows -->
+                <div class="about-content">
+                    <div class="about-image"> 
+                        <img src="assets/pfp.jpeg" alt="Noor Fatima" width="300">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate web developer based in Lahore, Pakistan, with experience creating beautiful, 
+                            functional websites. I specialize in HTML, CSS, JavaScript, and modern web technologies.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me learning new skills, exploring new technologies, and 
+                            building awesome projects to solve real-world problems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK Section (Third) -->
+        <section id="work" class="work">
+            <div class="container">
+                <h2>My Work</h2>
+                <p class="work-intro">Here are some of the projects I have built during my university studies</p>
+                
+                <div class="projects-grid"> <!-- a div that contains a grid layout for displaying multiple project cards in the "Work" section -->
+                    
+                    <!-- Project 1: Data Structures -->
+                    <div class="project-card">
+                        <img src="assets/StressLevel.png" alt="Data Structures Project"> 
+                        <div class="project-info">
+                            <h3>Stress Level Analyzer</h3>
+                            <p>A comprehensive university project demonstrating practical implementation of data structures and algorithms to solve complex computational problems efficiently.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NUR0710/Data-Structures_-Lab-Project" target="_blank">View on GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Operating Systems -->
+                    <div class="project-card">
+                        <img src="assets/OS.png" alt="Operating Systems Project">
+                        <div class="project-info">
+                            <h3>Log Processing</h3>
+                            <p>A university-level project focusing on core operating system concepts, demonstrating practical understanding of system-level programming and resource management.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NUR0710/OS_Lab-Project" target="_blank">View on GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Ecommerce -->
+                    <div class="project-card">
+                        <img src="assets/E-commerce.png" alt="E-comm ">
+                        <div class="project-info">
+                            <h3>E-commerce</h3>
+                            <p>E-commerce web page for online clothing</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NUR0710/Ecommerce" target="_blank">View on GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Portfolio -->
+                    <div class="project-card">
+                        <img src="assets/Portfolio.png" alt="Personal Portfolio">
+                        <div class="project-info">
+                            <h3>Personal Portfolio</h3>
+                            <p>A fully responsive, custom-built personal portfolio website designed to showcase my skills, projects, and professional journey.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NUR0710" target="_blank">View on GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT Section (Fourth & Last inside main) -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="contact-intro">Want to work together?<br>I'd love to hear from you.</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>📍 Location</h3>
+                            <p>Lahore, Pakistan</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>noor.bajwa0077@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>💻 GitHub</h3>
+                            <a href="https://github.com/NUR0710" target="_blank">github.com/NUR0710</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="mailto:noor.bajwa0077@gmail.com" method="post" enctype="text/plain"> <!-- a form that allows users to send messages directly (user input) -->
+                        <div class="form-group">
+                            <label for="name">Your Name</label> <!-- a label for the name input field, indicating that users should enter their name -->
+                            <input type="text" id="name" name="name" required placeholder="Name"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea> <!-- a textarea input field for users to enter their message, with a specified number of rows and a placeholder text, its a Resize handle -->
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- 3. Main Content Ends Here -->
+
+    <!-- 4. Footer -->
+    <footer class="footer"> <!-- defines the footer section of the webpage, which typically contains copyright information and other relevant links -->
+        <div class="container">
+            <p>&copy; 2026 Noor Fatima. All rights reserved.</p> <!-- a paragraph that displays the copyright notice, indicating that all rights are reserved by Noor Fatima for the year 2026 -->
+        </div>
+    </footer>
+</body>
+</html>
