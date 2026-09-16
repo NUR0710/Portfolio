@@ -458,6 +458,24 @@ code, pre, .hero::before, .hero::after {
     margin-top: auto; 
 }
 
+.project-links a {
+    color: #B8A4FF; /* Neon Lilac */
+    font-size: 2.5rem; /* INCREASED from 1.8rem - much bigger! */
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: rgba(184, 164, 255, 0.1); /* Subtle background */
+}
+
+.project-links a:hover {
+    color: #FFB5C2; /* Soft Rose Pink on hover */
+    background: rgba(184, 164, 255, 0.2); /* Slightly more visible background */
+    transform: scale(1.15) translateY(-3px); /* Bigger pop effect */
+    filter: drop-shadow(0 0 12px rgba(255, 181, 194, 0.8)); /* Stronger glow */
+}
 /* Contact Section */
 .contact {
     padding: 5rem 2rem;
