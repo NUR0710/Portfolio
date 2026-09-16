@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;600;700&display=swap');
+
 /* CSS Reset */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -10,9 +13,15 @@ html {
 }
 
 body {
-    font-family: 'chewy bubble font', Rounded sans-serifs;
+    font-family: 'Nunito', sans-serif; /* Rounded, friendly font for readability */
     line-height: 1.6;
     color: #333;
+}
+
+/* Apply the Bubble Font to ALL Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Chewy', cursive;
+    letter-spacing: 1px;
 }
 
 ul {
@@ -48,9 +57,9 @@ img {
 
 .logo h1 {
     color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 1.8rem; /* Slightly larger for the bubble font */
+    font-weight: 400; /* Chewy is naturally bold */
+    letter-spacing: 2px;
 }
 
 .navbar {
@@ -65,7 +74,8 @@ img {
 
 .nav-links a {
     color: white;
-    font-weight: bold;
+    font-family: 'Nunito', sans-serif; /* Keep nav links readable */
+    font-weight: 700;
     transition: all 0.3s;
     position: relative;
 }
@@ -147,25 +157,24 @@ img {
 .hero-content {
     position: relative;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(126, 87, 194, 0.1);
+    box-shadow: 0 10px 30px rgba(126, 87, 194, 0.15);
     backdrop-filter: blur(5px);
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 4rem; /* Made larger to show off the bubble font */
     margin-bottom: 1rem;
     color: #4a2c6b;
-    font-weight: 800;
 }
 
 .subtitle {
     font-size: 1.5rem;
     color: #7e57c2;
     margin-bottom: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -186,7 +195,7 @@ img {
     border: 2px solid #7e57c2;
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 700;
     transition: all 0.3s;
     background: white;
 }
@@ -198,27 +207,29 @@ img {
     box-shadow: 0 5px 15px rgba(126, 87, 194, 0.4);
 }
 
-/* Pink Tech Icons on Front Cover */
+/* Pink Tech Icons on Front Cover - SPREAD OUT & LARGER */
 .hero-tech-stack {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    font-size: 2.2rem;
-    color: #7e57c2; /* Beautiful Pink/Purple color */
-    opacity: 0.8;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    font-size: 3.5rem;
+    color: #7e57c2;
+    opacity: 0.9;
 }
 
 .hero-tech-stack i {
     transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(126, 87, 194, 0.3));
 }
 
-/* Cool hover effect when you move your mouse over them */
+/* Cool hover effect */
 .hero-tech-stack i:hover {
-    transform: translateY(-8px) scale(1.2);
-    color: #4a2c6b; /* Darker purple on hover */
+    transform: translateY(-12px) scale(1.3);
+    color: #4a2c6b;
     opacity: 1;
-    text-shadow: 0 0 15px rgba(126, 87, 194, 0.6);
+    filter: drop-shadow(0 8px 20px rgba(126, 87, 194, 0.6));
 }
 
 /* Stats Section */
@@ -242,13 +253,13 @@ img {
 }
 
 .stat-item h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 3rem; /* Larger for bubble font */
     margin-bottom: 0.5rem;
 }
 
 .stat-item p {
     font-size: 1.1rem;
+    font-weight: 600;
     opacity: 0.9;
 }
 
@@ -260,7 +271,7 @@ img {
 
 .about h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger for bubble font */
     margin-bottom: 3rem;
     color: #1a1a40;
 }
@@ -305,7 +316,7 @@ img {
 }
 
 .skills h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #1a1a40;
     margin-bottom: 3rem;
 }
@@ -328,7 +339,7 @@ img {
     align-items: center;
     gap: 1rem;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 700;
     color: #333;
     transition: all 0.3s ease;
     border: 2px solid transparent;
@@ -352,7 +363,7 @@ img {
 }
 
 .work h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: #1a1a40;
 }
@@ -361,6 +372,7 @@ img {
     font-size: 1.2rem;
     margin-bottom: 3rem;
     color: #333;
+    font-weight: 600;
 }
 
 /* Project Grid */
@@ -398,6 +410,7 @@ img {
 }
 
 .project-info h3 {
+    font-size: 1.8rem; /* Slightly larger for bubble font */
     color: #1a1a40;
     margin-bottom: 0.5rem;
 }
@@ -416,7 +429,7 @@ img {
 
 .project-links a {
     color: #b8a9c9;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.9rem;
     transition: color 0.3s;
 }
@@ -433,7 +446,7 @@ img {
 
 .contact h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: #1a1a40;
 }
@@ -443,6 +456,7 @@ img {
     margin-bottom: 3rem;
     font-size: 1.2rem;
     color: #666;
+    font-weight: 600;
 }
 
 .contact-content {
@@ -461,9 +475,9 @@ img {
 }
 
 .contact-item h3 {
+    font-size: 1.5rem;
     color: #1a1a40;
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
 }
 
 .contact-item p,
@@ -495,7 +509,7 @@ img {
 
 .form-group label {
     margin-bottom: 0.5rem;
-    font-weight: bold;
+    font-weight: 700;
     color: #1a1a40;
 }
 
@@ -505,34 +519,34 @@ img {
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 1rem;
+    font-family: 'Nunito', sans-serif; /* Match body font */
     transition: border-color 0.3s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #b8a9c9;
+    border-color: #7e57c2;
 }
 
 .form-group textarea {
     resize: vertical;
-    font-family: inherit;
 }
 
 .contact-form button {
     padding: 1rem 2rem;
-    background: #b8a9c9;
+    background: #7e57c2; /* Updated to match theme */
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 700;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
 
 .contact-form button:hover {
-    background: #9b8fb8;
+    background: #5e3a8c;
     transform: translateY(-2px);
 }
 
@@ -582,7 +596,7 @@ img {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .subtitle {
@@ -609,7 +623,7 @@ img {
     }
     
     .hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     .projects-grid {
