@@ -367,9 +367,8 @@ code, pre, .hero::before, .hero::after {
     font-size: 2rem;
 }
 
-/* =========================================
-   Certificates Section (Updated & Professional)
-   ========================================= */
+/*
+   Certificates Section  */
 .certificates {
     padding: 5rem 2rem;
     background: #F9F4FF;
