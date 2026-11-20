@@ -3,353 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for beautiful icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Noor Fatima - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Noor Fatima | Portfolio</title>
+    <style>
+        /* Minimal Light Theme CSS (Inspired by Jekyll Minimal Light) */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #24292e;
+            --link-color: #0366d6;
+            --link-hover: #0056b3;
+            --border-color: #eaecef;
+            --muted-color: #586069;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.25;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        h2 { font-size: 1.5rem; margin-top: 2.5rem; }
+        h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--link-hover); }
+
+        p { margin-bottom: 1rem; }
+
+        ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.5rem; }
+
+        .section-icon { margin-right: 0.5rem; }
+        
+        .project-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .project-item:last-child { border-bottom: none; }
+
+        .tech-stack {
+            font-style: italic;
+            color: var(--muted-color);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .cert-item {
+            margin-bottom: 0.75rem;
+        }
+        .cert-date {
+            color: var(--muted-color);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            body { padding: 1.5rem 1rem; }
+            h1 { font-size: 1.75rem; }
+        }
+    </style>
 </head>
 <body>
-    
-       <!-- Navigation Header -->
-    <header class="site-header">
-        <div class="container">
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#stats">Stats</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <!-- HOME Section -->
-        <section id="home" class="hero fade-in">
-            <!-- Floating Tech Elements (Background) -->
-            <div class="floating-element el-1">&lt;/&gt;</div>
-            <div class="floating-element el-2">{ }</div>
-            <div class="floating-element el-3">01</div>
-            <div class="floating-element el-4">AI</div>
-            <div class="floating-element el-5">/* */</div>
-
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Noor Fatima</h1>
-                    <p class="subtitle">Full Stack Developer</p>
-                    <div class="hero-social">
-                        <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
-                        <div class="social-links">
-                            <a href="https://github.com/NUR0710" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="mailto:noor.bajwa0077@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                        <!--  STATS Section -->
-        <section id="stats" class="stats fade-in">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <i class="fas fa-folder-open"></i>
-                        <h3>3+</h3>
-                        <p>Completed Projects</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>BSCS</h3>
-                        <p>University Student</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-certificate"></i>
-                        <h3>7+</h3>
-                        <p>Certifications</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>10+</h3>
-                        <p>Technologies</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-       <!-- ABOUT Section  -->
-<section id="about" class="about fade-in">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-image"> 
-                <img src="assets/pfp.jpeg" alt="Noor Fatima">
-            </div>
-            <div class="about-text">
-                <p>
-                    I am a Full Stack Developer and Computer Science student based in Lahore, Pakistan, specializing in building scalable web applications and integrating AI-driven solutions. My technical expertise spans frontend development with React and Tailwind CSS, backend architecture using Node.js and Python, and deploying machine learning models into production environments.
-                </p>
-            </div>
-        </div>
+    <!-- Header / About -->
+    <h1>👋 Noor Fatima</h1>
+    <p>
+        I am a <strong>BSCS student</strong> based in Lahore, Pakistan, with a strong passion for <strong>Artificial Intelligence (AI)</strong>, <strong>Full-Stack Development</strong>, and <strong>System Programming</strong>. 
+    </p>
+    <p>
+        I am currently focused on mastering data structures, algorithms, and building practical applications like stress detection systems. My long-term goal is to pursue a <strong>Master's degree in AI</strong> (targeting programs in Scotland, Turkey, USA, or Canada) and contribute to intelligent systems that make a real-world impact.
+    </p>
+    <div class="contact-links">
+        <a href="https://github.com/NUR0710" target="_blank">GitHub</a> • 
+        <a href="https://linkedin.com/in/noorfatima0710" target="_blank">LinkedIn</a> • 
+        <a href="mailto:noor.bajwa0077@gmail.com">noor.bajwa0077@gmail.com</a>
     </div>
-</section>
 
-                <!--  SKILLS Section -->
-        <section id="skills" class="skills fade-in">
-            <div class="container">
-                <h2>My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fab fa-html5" style="color: #e34c26;"></i><span>HTML5</span></div>
-                    <div class="skill-card"><i class="fab fa-css3-alt" style="color: #264de4;"></i><span>CSS3</span></div>
-                    <div class="skill-card"><i class="fab fa-js" style="color: #f0db4f;"></i><span>JavaScript</span></div>
-                    <div class="skill-card"><i class="fab fa-python" style="color: #306998;"></i><span>Python</span></div>
-                    <div class="skill-card"><i class="fab fa-cuttlefish" style="color: #00599C;"></i><span>C++</span></div>
-                    <div class="skill-card"><i class="fas fa-code" style="color: #555;"></i><span>C</span></div>
-                    <div class="skill-card"><i class="fab fa-aws" style="color: #FF9900;"></i><span>AWS Cloud</span></div>
-                    <div class="skill-card"><i class="fas fa-brain" style="color: #C73E5C;"></i><span>AI & Machine Learning</span></div>
-                    <div class="skill-card"><i class="fas fa-atom" style="color: #9b59b6;"></i><span>Quantum Computing</span></div>
-                    <div class="skill-card"><i class="fas fa-layer-group" style="color: #27ae60;"></i><span>Full-Stack Development</span></div>
-                </div>
-            </div>
-        </section>
+    <!-- Latest Updates -->
+    <h2><span class="section-icon">🔥</span>Latest Updates</h2>
+    <ul>
+        <li><strong>[Nov 2026]</strong> Developing a <strong>Stress Detection System</strong> in C++, focusing on clean code, file handling, and object-oriented design.</li>
+        <li><strong>[Recent]</strong> Achieved an <strong>A grade in Data Structures</strong>, with hands-on practice in binary tree traversals, recursion, queues, and stacks.</li>
+        <li><strong>[Recent]</strong> Completed advanced certifications including <strong>AWS Cloud Foundations</strong>, <strong>AI For Everyone</strong>, and <strong>Python Basics</strong>.</li>
+    </ul>
 
-                <!-- CERTIFICATES Section -->
-        <section id="certificates" class="certificates fade-in">
-            <div class="container">
-                <h2>Certifications</h2>
-               
-                <div class="certificates-grid">
-                    <!-- Certificate 1: AWS Cloud Foundations -->
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/aws.jpeg" alt="AWS Cloud Foundations">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>AWS Academy Graduate - Cloud Foundations</h3>
-                            <p>Amazon Web Services</p>
-                            <p class="certificate-date">June 2026</p>
-                            <div class="certificate-links">
-                                <a href="https://www.credly.com/badges/0941fa9a-c394-4ee8-beb1-a77d75c015c5/print" target="_blank" class="cert-link">
-                                    <i class="fas fa-external-link-alt"></i> Verify Badge
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Projects -->
+    <h2><span class="section-icon">💻</span>Projects</h2>
+    
+    <div class="project-item">
+        <h3>Stress-Level-Analyzer</h3>
+        <div class="tech-stack">C++, Object-Oriented Programming, File Handling, Data Structures</div>
+        <p>Analyzes user stress patterns through behavioral data and biometric inputs. Features real-time data visualization, predictive analytics, and personalized wellness recommendations. Built with clean code practices and optimized for performance.</p>
+        <a href="https://github.com/NUR0710/Stress-Level-Analyzer" target="_blank">[Code]</a>
+    </div>
 
-                    <!-- Certificate 2: AI For Everyone -->
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/ai.jpeg" alt="AI For Everyone">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>AI For Everyone</h3>
-                            <p>Coursera - DeepLearning.AI</p>
-                            <p class="certificate-date">June 2026</p>
-                            <div class="certificate-links">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/U8HT2QDCM8TL" target="_blank" class="cert-link">
-                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Certificate 3 : Quantum Information -->
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/Quantum.png" alt="Introduction to Quantum Information">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Introduction to Quantum Information</h3>
-                            <p>Coursera</p>
-                            <p class="certificate-date">July 2026</p>
-                            <div class="certificate-links">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/N24I4Q4ADVDG" target="_blank" class="cert-link">
-                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="project-item">
+        <h3>Concurrent Producer-Consumer System</h3>
+        <div class="tech-stack">C, Concurrency, System Programming, Log Processing</div>
+        <p>A high-performance log analysis system that processes thousands of system events per second. Implements multi-threading for parallel processing, efficient memory management using circular buffers, and intelligent pattern recognition for anomaly detection.</p>
+        <a href="https://github.com/NUR0710/Concurrent-Producer-Consumer-System" target="_blank">[Code]</a>
+    </div>
 
-                    <!-- Certificate 4: Python Basics -->
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/Python.png" alt="Python Basics">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Python Basics</h3>
-                            <p>Coursera</p>
-                            <p class="certificate-date">August 2026</p>
-                            <div class="certificate-links">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/2UHFNKET2AHY" target="_blank" class="cert-link">
-                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="project-item">
+        <h3>E-commerce Platform</h3>
+        <div class="tech-stack">JavaScript, HTML5, CSS3, Full-Stack Development</div>
+        <p>A full-featured online shopping platform with user authentication, product catalog, shopping cart, and secure checkout flow. Features responsive design, dynamic product filtering, and real-time inventory management.</p>
+        <a href="https://github.com/NUR0710/Ecommerce" target="_blank">[Code]</a> • 
+        <a href="https://portfolio-inky-theta-69.vercel.app/" target="_blank">[Demo]</a>
+    </div>
 
-                    <!-- Certificate 5: Introduction to HTML -->
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/html.png" alt="Introduction to HTML">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Introduction to HTML</h3>
-                            <p>Coursera</p>
-                            <p class="certificate-date">September 2026</p>
-                            <div class="certificate-links">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/G9QLLLS616SX" target="_blank" class="cert-link">
-                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Skills -->
+    <h2><span class="section-icon">🛠️</span>Skills & Technologies</h2>
+    <ul>
+        <li><strong>Languages:</strong> C++, C, Python, JavaScript, HTML/CSS</li>
+        <li><strong>Core Concepts:</strong> Data Structures & Algorithms, OOP, Recursion, Concurrency, File Handling</li>
+        <li><strong>Domains:</strong> Artificial Intelligence, Machine Learning, Cloud Computing (AWS), Full-Stack Development</li>
+    </ul>
 
-                    <!-- Certificate 6: Full-Stack Foundations -->
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/FullStackCertificatae.png" alt="Foundations of Coding Full-Stack">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Foundations of Coding Full-Stack</h3>
-                            <p>Coursera</p>
-                            <p class="certificate-date">September 2026</p>
-                            <div class="certificate-links">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/9TRLPOK24VBE" target="_blank" class="cert-link">
-                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Certifications & Awards -->
+    <h2><span class="section-icon">🎖</span>Certifications & Achievements</h2>
+    <div class="cert-item">
+        <strong>A Grade</strong> in Data Structures course.
+    </div>
+    <div class="cert-item">
+        <strong>AWS Academy Graduate - Cloud Foundations</strong> <span class="cert-date">| Amazon Web Services, 2026</span>
+    </div>
+    <div class="cert-item">
+        <strong>AI For Everyone</strong> <span class="cert-date">| DeepLearning.AI (Coursera), 2026</span>
+    </div>
+    <div class="cert-item">
+        <strong>Python Basics & Generative AI for Data Science</strong> <span class="cert-date">| Coursera, 2026</span>
+    </div>
 
-                    <!-- Certificate 7: Generative AI for Data Science -->
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/Generative Ai.png" alt="Generative AI for Data Science">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Generative AI for Data Science with Copilot</h3>
-                            <p>Coursera</p>
-                            <p class="certificate-date">September 2026</p>
-                            <div class="certificate-links">
-                                <a href="https://www.coursera.org/account/accomplishments/verify/WVZL48UIUI07" target="_blank" class="cert-link">
-                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Contact -->
+    <h2><span class="section-icon">📬</span>Get In Touch</h2>
+    <p>
+        I am always open to discussing AI, C++ projects, academic collaborations, or new opportunities. Feel free to reach out!
+    </p>
+    <div class="contact-links">
+        <a href="mailto:noor.bajwa0077@gmail.com">✉️ Email</a>
+        <a href="https://github.com/NUR0710" target="_blank">💻 GitHub</a>
+        <a href="https://linkedin.com/in/noorfatima0710" target="_blank">💼 LinkedIn</a>
+    </div>
 
-                </div>
-            </div>
-        </section>
-        
-        <!-- WORK Section -->
-        <section id="work" class="work fade-in">
-            <div class="container">
-                <h2>My Work</h2>
-                <p class="work-intro">Here are some of the projects I have built during my university studies</p>
-                
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="assets/SL.png" alt="Data Structures Project"> 
-                        <div class="project-info">
-                            <h3>Stress Level Analyzer</h3>
-                            <p>Analyzes user stress patterns through behavioral data and biometric inputs. Features real-time data visualization with interactive charts, predictive analytics using machine learning algorithms, and personalized wellness recommendations. Built with responsive UI components and optimized for performance across devices.</p>
-                                                <div class="project-links">
-                        <a href="https://github.com/NUR0710/Data-Structures_-Lab-Project" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                        </div>
-                    </div>
+    <br><br>
+    <p style="color: var(--muted-color); font-size: 0.85rem; text-align: center;">
+        Powered by clean code and continuous learning.
+    </p>
 
-                    <div class="project-card">
-                        <img src="assets/OS.png" alt="Operating Systems Project">
-                        <div class="project-info">
-                            <h3>Log Processing</h3>
-                            <p> A high-performance log analysis system that processes thousands of system events per second. Implements multi-threading for parallel processing, efficient memory management using circular buffers, and intelligent pattern recognition for anomaly detection.</p>
-                                                <div class="project-links">
-                        <a href="https://github.com/NUR0710/OS_Lab-Project" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="assets/E-commerce.png" alt="E-comm">
-                        <div class="project-info">
-                            <h3>E-commerce</h3>
-                            <p>A full-featured online shopping platform with user authentication, product catalog, shopping cart, and secure checkout flow. Features responsive design, dynamic product filtering, real-time inventory management, and seamless payment integration.</p>
-                                               <div class="project-links">
-                        <a href="https://github.com/NUR0710/Ecommerce" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-              <!-- CONTACT Section -->
-        <section id="contact" class="contact fade-in">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p class="contact-intro">Want to work together?<br>I'd love to hear from you.</p>
-                
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
-                            <p>Lahore, Pakistan</p>
-                        </div>
-                        <div class="contact-item">
-                            <h3><i class="fas fa-envelope"></i> Email</h3>
-                            <p>noor.bajwa0077@gmail.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <h3><i class="fab fa-github"></i> GitHub</h3>
-                            <a href="https://github.com/NUR0710" target="_blank">github.com/NUR0710</a>
-                        </div>
-                        
-                        <!--  LINKEDIN BLOCK -->
-                        <div class="contact-item">
-                            <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/noorfatima0710/" target="_blank">linkedin.com/in/noor-fatima-...</a>
-                        </div>
-                    </div>
-
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required placeholder="Email@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
-                        </div>
-                        <button type="submit" id="submit-btn">Send Message</button>
-                        <div id="form-status" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px; text-align: center;"></div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Noor Fatima. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
-    <!-- Combined JavaScript File -->
-    <script src="script.js"></script>
 </body>
 </html>
