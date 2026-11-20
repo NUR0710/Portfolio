@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head><title>Circle Cropper</title></head>
+<body style="font-family:Arial;padding:2rem;">
+  <h3>Upload your pfp.jpeg → get a circular favicon.png</h3>
+  <input type="file" id="file" accept="image/*"><br><br>
+  <canvas id="c" width="512" height="512" style="border:1px solid #ccc;max-width:250px;"></canvas>
+  <br><br>
+  <button id="dl" disabled style="padding:10px 20px;font-size:1rem;cursor:pointer;">Download favicon.png</button>
+
+  <script>
+    const file = document.getElementById('file');
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+    const btn = document.getElementById('dl');
+
+    file.addEventListener('change', () => {
+      const img = new Image();
+      img.onload = () => {
+        const size = 512;
+        canvas.width = canvas.height = size;
+        ctx.clearRect(0, 0, size, size);
+        // circle clip
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(size/2, size/2, size/2, 0, Math.PI*2);
+        ctx.closePath();
+        ctx.clip();
+        // cover-crop (center square)
+        const s = Math.min(img.width, img.height);
+        const sx = (img.width - s)/2, sy = (img.height - s)/2;
+        ctx.drawImage(img, sx, sy, s, s, 0, 0, size, size);
+        ctx.restore();
+        btn.disabled = false;
+      };
+      img.src = URL.createObjectURL(file.files[0]);
+    });
+
+    btn.addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.download = 'favicon.png';
+      a.href = canvas.toDataURL('image/png');
+      a.click();
+    });
+  </script>
+</body>
+</html>
