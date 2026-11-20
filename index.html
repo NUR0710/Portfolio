@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noor Fatima | Portfolio</title>
     <style>
-        /* Minimal Light Theme CSS (Inspired by Jekyll Minimal Light) */
         :root {
             --bg-color: #ffffff;
             --text-color: #24292e;
@@ -14,7 +13,6 @@
             --border-color: #eaecef;
             --muted-color: #586069;
         }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -24,74 +22,57 @@
             margin: 0 auto;
             padding: 2rem 1.5rem;
         }
-
-        h1, h2, h3 {
-            font-weight: 600;
-            line-height: 1.25;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        h1 { font-size: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        h1, h2, h3 { font-weight: 600; line-height: 1.25; margin-top: 2rem; margin-bottom: 1rem; }
+        h1 { font-size: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; display: flex; align-items: center; gap: 1rem; }
         h2 { font-size: 1.5rem; margin-top: 2.5rem; }
         h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
-
         a { color: var(--link-color); text-decoration: none; }
         a:hover { text-decoration: underline; color: var(--link-hover); }
-
         p { margin-bottom: 1rem; }
-
         ul { padding-left: 1.5rem; margin-bottom: 1rem; }
         li { margin-bottom: 0.5rem; }
-
         .section-icon { margin-right: 0.5rem; }
-        
-        .project-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
+        .project-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); }
         .project-item:last-child { border-bottom: none; }
-
-        .tech-stack {
-            font-style: italic;
-            color: var(--muted-color);
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .cert-item {
-            margin-bottom: 0.75rem;
-        }
-        .cert-date {
-            color: var(--muted-color);
-            font-size: 0.9rem;
-        }
-
-        /* Mobile Responsiveness */
+        .tech-stack { font-style: italic; color: var(--muted-color); font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+        .cert-item { margin-bottom: 1.25rem; }
+        .cert-date { color: var(--muted-color); font-size: 0.9rem; }
+        .profile-pic { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); }
+        .cert-img { max-width: 160px; border: 1px solid var(--border-color); border-radius: 6px; margin-top: 0.5rem; display: block; transition: transform 0.2s ease; }
+        .cert-img:hover { transform: scale(1.02); border-color: var(--link-color); }
+        .tagline { margin-top: 1.5rem; font-style: italic; color: var(--muted-color); text-align: center; border-top: 1px solid var(--border-color); padding-top: 1.25rem; }
         @media (max-width: 600px) {
             body { padding: 1.5rem 1rem; }
-            h1 { font-size: 1.75rem; }
+            h1 { font-size: 1.5rem; flex-direction: column; align-items: flex-start; }
+            .profile-pic { width: 60px; height: 60px; }
         }
     </style>
 </head>
 <body>
 
     <!-- Header / About -->
-    <h1>👋 Noor Fatima</h1>
+    <h1>
+        <img src="assets/profile.jpg" alt="Noor Fatima" class="profile-pic">
+        Hi, I'm a Computer Science Student &amp; Developer.
+    </h1>
+
     <p>
-        I am a <strong>BSCS student</strong> based in Lahore, Pakistan, with a strong passion for <strong>Artificial Intelligence (AI)</strong>, <strong>Full-Stack Development</strong>, and <strong>System Programming</strong>. 
+        I'm a <strong>BSCS student</strong> based in Lahore, Pakistan, with an interest in building practical software solutions and exploring the possibilities of technology.
     </p>
+
     <p>
-        I am currently focused on mastering data structures, algorithms, and building practical applications like stress detection systems. My long-term goal is to pursue a <strong>Master's degree in AI</strong> (targeting programs in Scotland, Turkey, USA, or Canada) and contribute to intelligent systems that make a real-world impact.
+        My work and learning interests span <strong>Full-Stack Development, Artificial Intelligence, and System Programming</strong>. I enjoy solving problems, learning new technologies, and turning ideas into functional applications — and I'm currently a <strong>Software &amp; AI/ML Intern at Raythorne</strong>.
     </p>
+
+    <p>
+        Currently, I'm strengthening my foundations in software development, data structures, and algorithms while working on projects that bring technology closer to real-world needs.
+    </p>
+
+    <p class="tagline">
+        <strong>Always learning. Building with purpose. Growing through code.</strong>
+    </p>
+
     <div class="contact-links">
         <a href="https://github.com/NUR0710" target="_blank">GitHub</a> • 
         <a href="https://linkedin.com/in/noorfatima0710" target="_blank">LinkedIn</a> • 
@@ -101,14 +82,15 @@
     <!-- Latest Updates -->
     <h2><span class="section-icon">🔥</span>Latest Updates</h2>
     <ul>
-        <li><strong>[Nov 2026]</strong> Developing a <strong>Stress Detection System</strong> in C++, focusing on clean code, file handling, and object-oriented design.</li>
+        <li><strong>[Nov 2026]</strong> Completed the <strong>Computer Networks, the Internet, and Wireless Technology</strong> certification — reinforcing my CCN coursework.</li>
+        <li><strong>[Nov 2026]</strong> Started internship as a <strong>Software &amp; AI/ML Intern at Raythorne</strong>.</li>
+        <li><strong>[Recent]</strong> Developing a <strong>Stress Detection System</strong> in C++, focusing on clean code, file handling, and object-oriented design.</li>
         <li><strong>[Recent]</strong> Achieved an <strong>A grade in Data Structures</strong>, with hands-on practice in binary tree traversals, recursion, queues, and stacks.</li>
-        <li><strong>[Recent]</strong> Completed advanced certifications including <strong>AWS Cloud Foundations</strong>, <strong>AI For Everyone</strong>, and <strong>Python Basics</strong>.</li>
     </ul>
 
     <!-- Projects -->
     <h2><span class="section-icon">💻</span>Projects</h2>
-    
+
     <div class="project-item">
         <h3>Stress-Level-Analyzer</h3>
         <div class="tech-stack">C++, Object-Oriented Programming, File Handling, Data Structures</div>
@@ -132,26 +114,58 @@
     </div>
 
     <!-- Skills -->
-    <h2><span class="section-icon">🛠️</span>Skills & Technologies</h2>
+    <h2><span class="section-icon">🛠️</span>Skills &amp; Technologies</h2>
     <ul>
         <li><strong>Languages:</strong> C++, C, Python, JavaScript, HTML/CSS</li>
-        <li><strong>Core Concepts:</strong> Data Structures & Algorithms, OOP, Recursion, Concurrency, File Handling</li>
-        <li><strong>Domains:</strong> Artificial Intelligence, Machine Learning, Cloud Computing (AWS), Full-Stack Development</li>
+        <li><strong>Core Concepts:</strong> Data Structures &amp; Algorithms, OOP, Recursion, Concurrency, File Handling</li>
+        <li><strong>Domains:</strong> Artificial Intelligence, Machine Learning, Full-Stack Development</li>
     </ul>
 
     <!-- Certifications & Awards -->
-    <h2><span class="section-icon">🎖</span>Certifications & Achievements</h2>
+    <h2><span class="section-icon">🎖</span>Certifications &amp; Achievements</h2>
+
     <div class="cert-item">
         <strong>A Grade</strong> in Data Structures course.
     </div>
+
     <div class="cert-item">
-        <strong>AWS Academy Graduate - Cloud Foundations</strong> <span class="cert-date">| Amazon Web Services, 2026</span>
+        <strong>Computer Networks, the Internet, and Wireless Technology</strong> <span class="cert-date">| John Wiley &amp; Sons (Coursera), Nov 2026</span><br>
+        <a href="https://www.coursera.org/account/accomplishments/verify/MQ7KEKJ1QRL8" target="_blank"><img src="assets/computer_network.png" alt="Computer Networks Certificate" class="cert-img"></a>
     </div>
+
     <div class="cert-item">
-        <strong>AI For Everyone</strong> <span class="cert-date">| DeepLearning.AI (Coursera), 2026</span>
+        <strong>Generative AI for Data Science with Copilot</strong> <span class="cert-date">| Microsoft (Coursera), Sep 2026</span><br>
+        <a href="https://www.coursera.org/account/accomplishments/verify/WVZL48UIUI07" target="_blank"><img src="assets/generative-ai.png" alt="Generative AI Certificate" class="cert-img"></a>
     </div>
+
     <div class="cert-item">
-        <strong>Python Basics & Generative AI for Data Science</strong> <span class="cert-date">| Coursera, 2026</span>
+        <strong>Foundations of Coding Full-Stack</strong> <span class="cert-date">| Microsoft (Coursera), Sep 2026</span><br>
+        <a href="https://www.coursera.org/account/accomplishments/verify/9TRLPOK24VBE" target="_blank"><img src="assets/full-stack.png" alt="Full-Stack Certificate" class="cert-img"></a>
+    </div>
+
+    <div class="cert-item">
+        <strong>Introduction to HTML</strong> <span class="cert-date">| Coursera, Sep 2026</span><br>
+        <a href="https://www.coursera.org/account/accomplishments/verify/G9QLLLS616SX" target="_blank"><img src="assets/html.png" alt="HTML Certificate" class="cert-img"></a>
+    </div>
+
+    <div class="cert-item">
+        <strong>Python Basics</strong> <span class="cert-date">| University of Michigan (Coursera), Aug 2026</span><br>
+        <a href="https://www.coursera.org/account/accomplishments/verify/2UHFNKET2AHY" target="_blank"><img src="assets/Python.png" alt="Python Certificate" class="cert-img"></a>
+    </div>
+
+    <div class="cert-item">
+        <strong>Introduction to Quantum Information</strong> <span class="cert-date">| KAIST (Coursera), Jul 2026</span><br>
+        <a href="https://www.coursera.org/account/accomplishments/verify/N24I4Q4ADVDG" target="_blank"><img src="assets/Quantum.png" alt="Quantum Certificate" class="cert-img"></a>
+    </div>
+
+    <div class="cert-item">
+        <strong>AI For Everyone</strong> <span class="cert-date">| DeepLearning.AI (Coursera), Jun 2026</span><br>
+        <a href="https://www.coursera.org/account/accomplishments/verify/U8HT2QDCM8TL" target="_blank"><img src="assets/ai.jpeg" alt="AI For Everyone Certificate" class="cert-img"></a>
+    </div>
+
+    <div class="cert-item">
+        <strong>AWS Academy Graduate - Cloud Foundations</strong> <span class="cert-date">| Amazon Web Services, Jun 2026</span><br>
+        <a href="https://www.credly.com/badges/0941fa9a-c394-4ee8-beb1-a77d75c015c5" target="_blank"><img src="assets/aws.jpeg" alt="AWS Certificate" class="cert-img"></a>
     </div>
 
     <!-- Contact -->
